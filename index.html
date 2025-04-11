@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Minimalista</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Proyecto Altomayo</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <div class="burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/img3.jpg') no-repeat center center/cover;">
+            <div class="hero-content">
+                <h2>Diseño Simple & Efectivo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                <a href="#" class="btn">Saber más</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Diseño</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-code"></i>
+                        <h3>Desarrollo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsivo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Galería</h2>
+            <div class="gallery-grid">
+                <div class="card">
+                    <img src="img/img1.jpg" alt="Imagen 1">
+                    <div class="card-content">
+                        <h3>Título Imagen 1</h3>
+                        <p>Descripción breve de la imagen 1</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img4.jpg" alt="Imagen 2">
+                    <div class="card-content">
+                        <h3>Título Imagen 2</h3>
+                        <p>Descripción breve de la imagen 2</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img2.jpg" alt="Imagen 3">
+                    <div class="card-content">
+                        <h3>Título Imagen 3</h3>
+                        <p>Descripción breve de la imagen 3</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img3.jpg" alt="Imagen 4">
+                    <div class="card-content">
+                        <h3>Título Imagen 4</h3>
+                        <p>Descripción breve de la imagen 4</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sitio Minimalista. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menú hamburguesa
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+</body>
+</html>
